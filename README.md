@@ -41,3 +41,11 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 npx shadcn@latest add accordion badge card carousel checkbox collapsible command dialog input label radio-group scroll-area separator table textarea tooltip
 
 ```
+
+### connect clerk
+
+1. signin account clerk
+2. create application
+3. run `npm install @clerk/nextjs`
+4. create file .env past API Key
+5. create middleware.ts file
