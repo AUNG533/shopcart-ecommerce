@@ -35,7 +35,7 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
-### Create ui
+### build ui
 
 ```
 npx shadcn@latest add accordion badge card carousel checkbox collapsible command dialog input label radio-group scroll-area separator table textarea tooltip
@@ -49,3 +49,10 @@ npx shadcn@latest add accordion badge card carousel checkbox collapsible command
 3. run `npm install @clerk/nextjs`
 4. create file .env past API Key
 5. create middleware.ts file
+
+### connect sanity
+
+1. login
+2. createproject
+3. in .env file create `NEXT_PUBLIC_SANITY_PROJECT_ID="project id"`
+   and `NEXT_PUBLIC_SANITY_DATASET="production"`
