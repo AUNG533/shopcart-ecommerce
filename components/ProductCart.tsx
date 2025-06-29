@@ -5,9 +5,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { Flame, StarIcon } from "lucide-react";
 import AddToWishlistButton from "./AddToWishlistButton";
-import { Title } from "./ui/text";
 import PriceView from "./PriceView";
 import AddToCartButton from "./AddToCartButton";
+import Title from "./Title";
 
 const ProductCart = ({ product }: { product: Product }) => {
   return (
@@ -65,9 +65,7 @@ const ProductCart = ({ product }: { product: Product }) => {
             {product?.categories?.map((cat) => cat).join(", ")}
           </p>
         )}
-        <Title className="text-sm md:text-sm line-clamp-1">
-          {product?.name}
-        </Title>
+        <Title className="text-sm line-clamp-1">{product?.name}</Title>
         <div className="flex items-center gap-2">
           <div className="flex items-center gap-0.5">
             {[...Array(5)].map((_, index) => (

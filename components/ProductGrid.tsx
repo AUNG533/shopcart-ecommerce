@@ -38,7 +38,7 @@ const ProductGrid = () => {
   }, [selectedTab]);
 
   return (
-    <div>
+    <div className="pt-10">
       <HomeTabBar selectedTab={selectedTab} onTabSelect={setSelectedTab} />
       {loading ? (
         <div
