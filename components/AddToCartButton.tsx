@@ -2,12 +2,11 @@
 
 import { Product } from "@/sanity.types";
 import { ShoppingBag } from "lucide-react";
-import React from "react";
 import { Button } from "./ui/button";
 import { cn } from "@/lib/utils";
 
 interface Props {
-  product: Product;
+  product: Product | null | undefined;
   className?: string;
 }
 
@@ -17,6 +16,7 @@ const AddToCartButton = ({ product, className }: Props) => {
   const handleAddToCart = () => {
     window.alert("Added to Cart");
   };
+
   return (
     <div>
       <Button
